@@ -5,8 +5,6 @@
 body{
     background-color:black;
     color: white;
-    /* font-family:'Courier New', Courier, monospace; */
-    /* padding: 1rem; */
 }
 .header{
     height:30px;
@@ -16,7 +14,6 @@ body{
     padding:1rem;
     text-transform: capitalize;
     align-items: center;
-    /* padding-left: 1rem; */
     font-weight: bold;
 }
 .header .hsect1{
@@ -149,6 +146,7 @@ footer{
     border: 1px solid rgba(73, 73, 75, 0.336);
     background-color:rgba(31, 30, 30, 0.288);
     text-transform: capitalize;
+    color: aliceblue;
 }
 .footerSect1{
     display: flex;
