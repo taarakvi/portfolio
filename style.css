@@ -37,12 +37,33 @@ body{
 }
 .barIcon{
     display:none;
+    margin-right: 1rem;
+    /* width: 2rem; */
 }
 .header span:hover{
     border-bottom: 1px solid rgb(241, 2, 14);
     transform: scale(1.1);
     cursor: pointer;
 }
+/* .barIcon */
+.toggle{
+    display:none;
+}
+.barOpt{
+    position: absolute;
+    color: white;
+    right:1rem;
+    display:flex;
+    flex-direction: column;
+    top: 4rem;
+    gap:1rem;
+    background-color:rgba(27, 26, 26, 0.877);
+    padding:10px;
+    text-align:center;
+    border-radius: 5px;
+    border:1px solid rgba(255, 255, 255, 0.103);
+}
+
 /* section1 */
 .container{
     padding: 1rem;
@@ -130,4 +151,7 @@ body{
   .opts{
     display:none;
   }
+  /* .toggle{
+    display:none;
+  } */
 }
