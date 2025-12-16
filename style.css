@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:black;
+    color: white;
+    /* font-family:'Courier New', Courier, monospace; */
+    padding: 1rem;
+}
+.header{
+    height:30px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    text-transform: capitalize;
+    align-items: center;
+    /* padding-left: 1rem; */
+    font-weight: bold;
+}
+.header .hsect1{
+    display: flex;
+    gap:4rem;
+    align-items: center;
+}
+.header .name{
+    font-size:25px;
+}
+.header .hire{
+    background-color: blue;
+    padding:5px;
+    border-radius:50px;
+    border: none;
+    width: 4rem;
+    text-align: center;
+}
+.barIcon{
+    display:none;
+}
+.header span:hover{
+    border-bottom: 1px solid rgb(241, 2, 14);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* section1 */
+.container{
+    padding: 1rem;
+}
+.cont1{
+    margin-top:10vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.picBox{
+    height:350px;
+    width: 280px;
+    background-image: url("img-source/1727856828862-removebg-preview.png");
+    background-size: cover;
+    /* border:1px solid blue; */
+    border-radius:50%;
+    box-shadow:0px 20px 20px 10px rgb(241, 2, 14);
+}
+.meAbout{
+    text-transform: capitalize;
+    /* border: 1px solid green; */
+}
+.bio{
+    margin-top:5px;
+}
+.contact{
+    display:flex;
+    gap:2rem;
+    margin-top:1rem;
+    align-items: center;
+}
+.cv{
+    /* background-color:red; */
+    color:white;
+    padding:1px;
+    border-radius: 5px;
+    font-weight: bold;
+    width:2.5rem;
+    font-size: small;
+}
+.contact div:hover{
+    transform: scale(1.2);
+}
+
+/* section2 */
+.skillBox{
+    display:flex;
+    margin-top:15vh;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    gap:2rem;
+}
+.skillBox .box{
+    width: 250px;
+    /* height:100px; */
+    border: 1px solid rgba(73, 73, 75, 0.336);
+    background-color:rgba(31, 30, 30, 0.288);
+    border-radius:10px;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+.skillBox .skillIcon{
+    color:red;
+    /* padding: 1rem; */
+    /* border: 1px solid blue; */
+    margin-bottom:10px;
+    font-size:25px;
+}
+
+.skillBox .box:hover{
+    transform: scale(1.05);
+}
+
+
+/* mediaQuery */
+@media(max-width:800px){
+  .barIcon{
+    display:block;
+    font-size: large;
+  }
+  .opts{
+    display:none;
+  }
+}
