@@ -240,12 +240,27 @@ section4{
     background-repeat: no-repeat;
 }
 .weatherBox{
-    background-image:url("img-source/800966cc-495a-4d7f-8afe-e5f2a3e89456-cover.png");
+    background-image:url("img-source/weather.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .watchBox{
-    background-image:url("img-source/94487038-2974-4c4a-a9f8-65cb7a1dba76-cover.png");
+    background-image:url("img-source/watch.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.spotifyBox{
+    background-image:url("img-source/spotify.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gmailBox{
+    background-image:url("img-source/gmail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.touristBox{
+    background-image:url("");
     background-size: cover;
     background-repeat: no-repeat;
 }
