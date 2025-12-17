@@ -14,7 +14,7 @@ body{
     padding:1rem;
     text-transform: capitalize;
     align-items: center;
-    font-weight: bold;
+    font-weight: bold;    
 }
 .header .hsect1{
     display: flex;
@@ -197,7 +197,6 @@ section3{
     text-transform: capitalize;
     font-weight: bold;
     padding: 0px 1rem 0px 1rem;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .eduSect2{
     width: 80%;
@@ -208,7 +207,6 @@ section3{
     font-size: large;
     display: flex;
     flex-direction: column;
-    /* padding: 1rem; */
     gap:1rem;
     text-shadow: 0px 5px 10px black;
 }
@@ -216,6 +214,41 @@ section3{
     margin-top:1rem;
 }
 
+/* section4 */
+section4{
+    display:none;
+}
+.proContainer{
+    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.proContainer .proBox{
+    width:280px;
+    height:200px;
+    border: 1px solid red;
+    border: 1px solid rgba(73, 73, 75, 0.336);
+    border-radius:10px;
+    background-color:rgba(31, 30, 30, 0.288);
+    padding:5px;
+}
+.calcuBox{
+    background-image:url("img-source/calculator.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.weatherBox{
+    background-image:url("img-source/800966cc-495a-4d7f-8afe-e5f2a3e89456-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.watchBox{
+    background-image:url("img-source/94487038-2974-4c4a-a9f8-65cb7a1dba76-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* mediaQuery */
 @media(min-width:950px){
     .barOption{

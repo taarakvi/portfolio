@@ -7,31 +7,62 @@ bar.addEventListener("click",()=>{
     // barOpt.style.display = "block"
 
 })
+    let homeB = document.querySelector(".home")
+    let BarHomeB = document.querySelector(".H-home")
+    let sect1 = document.querySelector(".container")
+    let sect2 = document.querySelector(".skillContainer")
+    let sect3 = document.querySelector("section3")
+    let sect4 = document.querySelector("section4")
 
-
-function eduF(){
     let eduB = document.querySelector(".educations")
-    let sect1 = document.querySelector(".container")
-    let sect2 = document.querySelector(".skillContainer")
-    let sect3 = document.querySelector("section3")
-    // eduB.style.display = "none"
-    eduB.addEventListener("click",()=>{
-        sect3.style.display="block"
-        sect1.style.display="none"
-        sect2.style.display="none"
+    let BarEduB = document.querySelector(".H-educations")
+
+    let proB = document.querySelector(".projects")
+    let BarProB = document.querySelector(".H-projects")
+// homeButtun
+function homeF(){
+    homeB.addEventListener("click",()=>{
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="block"
+        sect2.style.display="block"
     })
-    
-}eduF();
+    BarHomeB.addEventListener("click",()=>{
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="block"
+        sect2.style.display="block"
+    }) 
+}homeF()
+
+// educationsButtun
 function eduF(){
-    let eduB = document.querySelector(".H-educations")
-    let sect1 = document.querySelector(".container")
-    let sect2 = document.querySelector(".skillContainer")
-    let sect3 = document.querySelector("section3")
-    // eduB.style.display = "none"
     eduB.addEventListener("click",()=>{
+        sect4.style.display="none"
         sect3.style.display="block"
         sect1.style.display="none"
         sect2.style.display="none"
     })
-    
+    BarEduB.addEventListener("click",()=>{
+        sect4.style.display="none"
+        sect3.style.display="block"
+        sect1.style.display="none"
+        sect2.style.display="none"
+    }) 
 }eduF();
+
+// projectsButton
+function projectB(){
+    proB.addEventListener("click",()=>{
+        sect4.style.display="block"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+    })
+    BarProB.addEventListener("click",()=>{
+        sect4.style.display="block"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+    })   
+}projectB()
