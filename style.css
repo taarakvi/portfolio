@@ -6,11 +6,12 @@ body{
     background-color:black;
     color: white;
 }
+
 .header{
     height:30px;
     /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     padding:1rem;
     text-transform: capitalize;
     align-items: center;
@@ -20,6 +21,7 @@ body{
     display: flex;
     gap:4rem;
     align-items: center;
+    /* position: fixed; */
 }
 .header .name{
     font-size:20px;
@@ -89,8 +91,8 @@ body{
 }
 .meAbout{
     text-transform: capitalize;
-    /* border: 1px solid green; */
 }
+
 .bio{
     margin-top:5px;
 }
@@ -218,8 +220,12 @@ section3{
 section4{
     display:none;
 }
+.proMainContainer{
+    padding: 2rem 1rem 1rem 1rem;
+}
+
 .proContainer{
-    padding: 3rem 1rem 1rem 1rem;
+    margin-top:2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -238,32 +244,80 @@ section4{
     background-image:url("img-source/calculator.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .weatherBox{
     background-image:url("img-source/weather.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .watchBox{
     background-image:url("img-source/watch.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .spotifyBox{
     background-image:url("img-source/spotify.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .gmailBox{
     background-image:url("img-source/gmail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .touristBox{
-    background-image:url("");
+    background-image:url("img-source/jhula pul.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
+/* section5 */
+section5{
+    display: none;
+}
+.coContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.coContainer h3{
+    font-size:30px;
+    margin: 1rem;
+    color: red;
+}
+.coContainer  .inptBox{
+    width:50%;
+    padding: 1rem;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.coContainer textarea{
+    height:25vh;
+    font-size: small;
+}
+.coContainer .cButton{
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    background-color: red;
+    color:white;
+    font-size:15px;
+}
+
 /* mediaQuery */
 @media(min-width:950px){
     .barOption{
@@ -278,5 +332,14 @@ section4{
   .opts{
     display:none;
   }
-
+}
+/* contact */
+@media(max-width:420px){
+    .coContainer  .inptBox{
+    width:250px;
+    /* padding: 1rem; */
+    outline: none;
+    font-size:17px;
+  
+}
 }
