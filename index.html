@@ -16,7 +16,7 @@
                 <span class="educations opts">educations</span>
                 <span class="projects opts">projects</span>
                 <span class="H-contact opts">contact</span>
-                <span class="resume opts">resume</span>
+                <!-- <span class="resume opts">resume</span> -->
                 <span class="work opts">about me</span>
                 <span class="hire opts">hire me</span> 
                 <span class="barIcon"><i class="fa-solid fa-bars"></i></span>
@@ -117,16 +117,37 @@
         <div class="coContainerMain">
             <div class="coContainer">
                 <h3>contact</h3>
-                <input class="inptBox" type="text" placeholder="name">
-                <input class="inptBox" type="email" placeholder="@gmail.com">
-                <input class="inptBox" type="number" placeholder="number">
-                <input class="inptBox" type="text" placeholder="address">
-                 <textarea class="inptBox" placeholder="message"></textarea>
+                <div class="box">
+                <input class="inptBox" id="inptName" type="text" placeholder="name">
+                <label class="nameError"></label>
+                </div>
+
+                <div class="box">
+                <input class="inptBox" id="inptGmail" type="email" placeholder="@gmail.com">
+                <label class="gmailError"></label>
+                </div>
+
+                <div class="box">
+                <input class="inptBox" id="number" type="number" placeholder="number">
+                <label class="numberError"></label>
+                </div>
+
+                <div class="box">
+                <input class="inptBox" id="inptAdd" type="text" placeholder="address">
+                <label class="addError"></label>
+                </div>
+
+                <div class="box">
+                 <textarea class="inptBox" id="textArea" placeholder="message"></textarea>
+                 </div>
                  <button class="cButton">send message</button>
             </div>
         </div>
     </section5>
-
+<!-- section6 resume -->
+    <section6>
+        
+    </section6>
 
 <!-- footer -->
          <footer>
