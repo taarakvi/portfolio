@@ -158,17 +158,30 @@ function inputForm(){
         else{
             addError.textContent = "invalid"
         }
+
+        if(name.value===""||gmail.value==""||address.value==""||textArea.value==""||number.value===""){
+                    alert("fill full details")
+                    
+                }
+                else{
+                    if(x === true && y==true&&z===true&&j===true){
+                     alert("message sent")   
+                    name.value = "";
+                    gmail.value = "";
+                    address.value = "";
+                    textArea.value = "";
+                    number.value = "";   
+                    }
+                    else{
+                        alert("something wrong")
+                    }
+                }    
+
         }check()
        
-        function verify(){
-        if(name.value===""||gmail.value==""||address.value==""||textArea.value==""||number.value===""){
-            alert("fill details")
-            
-        }
-        else{
-            alert("message sent")
-        }    
-        }verify();
+        // function verify(){
+        
+        // }verify();
         
     })
 }inputForm()
