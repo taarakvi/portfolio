@@ -161,7 +161,7 @@ function inputForm(){
         }check()
        
         function verify(){
-        if(name.value === ""||gmail.value==""||address.value==""||textArea.value==""||number.value===""){
+        if(name.value===""||gmail.value==""||address.value==""||textArea.value==""||number.value===""){
             alert("fill details")
             
         }
