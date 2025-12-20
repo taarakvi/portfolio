@@ -359,9 +359,9 @@ section5{
   }
 }
 /* contact */
-@media(max-width:600px){
+@media(max-width:500px){
     .coContainer  .box{
-    width:290px;
+    width:100%;
     /* padding: 1rem; */
     outline: none;
     font-size:17px;
