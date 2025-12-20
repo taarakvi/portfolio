@@ -359,12 +359,14 @@ section5{
   }
 }
 /* contact */
-@media(max-width:500px){
+@media(max-width:600px){
     .coContainer  .box{
     width:100%;
-    /* padding: 1rem; */
-    outline: none;
-    font-size:17px;
-  
+}
+.coContainer .inptBox{
+    font-size:15px;
+}
+.coContainer .box label{
+    font-size: 13px;
 }
 }

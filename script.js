@@ -134,7 +134,7 @@ function inputForm(){
             console.log("gmail true")
             gmailError.textContent = ""
         } else{
-            gmailError.textContent = "invalid"
+            gmailError.textContent = "invalid user@gmail.com"
             console.log(gmailError.value)
         }
 
@@ -149,7 +149,7 @@ function inputForm(){
             console.log("number true")
             numberError.textContent = ""
         } else{
-            numberError.textContent = "invalid"
+            numberError.textContent = "invalid 0 to 9"
         }
         if(j === true){
             console.log("address true")
