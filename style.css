@@ -16,6 +16,7 @@ body{
     text-transform: capitalize;
     align-items: center;
     font-weight: bold;    
+    
 }
 .header .hsect1{
     display: flex;
