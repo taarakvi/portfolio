@@ -13,6 +13,7 @@ bar.addEventListener("click",()=>{
     let sect3 = document.querySelector("section3")
     let sect4 = document.querySelector("section4")
     let sect5 = document.querySelector("section5")
+    let sect6 = document.querySelector("section6")
 // homeButton
     let homeB = document.querySelector(".home")
     let BarHomeB = document.querySelector(".H-home")
@@ -25,9 +26,14 @@ bar.addEventListener("click",()=>{
 // CONTACT
     let contact = document.querySelector(".H-contact")
     let BarContact = document.querySelector(".HBr-contact")
+// about
+    let aboutMe = document.querySelector(".H-about")
+    let BarAboutMe = document.querySelector(".H-about-me")
+
 // homeButtun
 function homeF(){
     homeB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
         sect3.style.display="none"
@@ -35,6 +41,7 @@ function homeF(){
         sect2.style.display="block"
     })
     BarHomeB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
         sect3.style.display="none"
@@ -47,6 +54,7 @@ function homeF(){
 // educationsButtun
 function eduF(){
     eduB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
         sect3.style.display="block"
@@ -54,6 +62,7 @@ function eduF(){
         sect2.style.display="none"
     })
     BarEduB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
         sect3.style.display="block"
@@ -66,6 +75,7 @@ function eduF(){
 // projectsButton
 function projectB(){
     proB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="block"
         sect3.style.display="none"
@@ -73,6 +83,7 @@ function projectB(){
         sect2.style.display="none"
     })
     BarProB.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="block"
         sect3.style.display="none"
@@ -85,6 +96,7 @@ function projectB(){
 // contact
 function contactB(){
     contact.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="block"
         sect4.style.display="none"
         sect3.style.display="none"
@@ -92,6 +104,7 @@ function contactB(){
         sect2.style.display="none"
     })
     BarContact.addEventListener("click",()=>{
+        sect6.style.display="none"
         sect5.style.display="block"
         sect4.style.display="none"
         sect3.style.display="none"
@@ -99,37 +112,65 @@ function contactB(){
         sect2.style.display="none"
         barOpt.classList.toggle("barOption")
     })   
-}contactB()
+}contactB();
+function aboutMeB(){
+    aboutMe.addEventListener("click",()=>{
+        sect6.style.display="block"
+        sect5.style.display="none"
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+    })
+    BarAboutMe.addEventListener("click",()=>{
+        sect6.style.display="block"
+        sect5.style.display="none"
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+        barOpt.classList.toggle("barOption")
+    })   
+}aboutMeB();
 
-// contact input form
-function inputForm(){
-    let name = document.getElementById("inptName")
-    let gmail = document.getElementById("inptGmail")
-    let number = document.getElementById("number")
-    let address = document.getElementById("inptAdd")  
-    let textArea = document.getElementById("textArea")  
-    let buttun = document.querySelector(".cButton")
+// CONTACT FORM
+// browser script from gmailjs
+        (function(){
+        emailjs.init( "wRIBvlc6NkkcrRmi1");
+        })();
+//  mainFunction      
+    function sendMail(){
+        var forms = {
+        name: document.getElementById("inptName").value,
+        email: document.getElementById("inptGmail").value,
+        title: document.getElementById("inptSubject").value,
+        address: document.getElementById("inptAdd").value,
+        message: document.getElementById("textArea").value
+        };
+// access ID
+        let srvID = 'service_0y0wlle'
+        let tempID = 'template_husnajl'
 
-    let nameError = document.querySelector(".nameError")
-    let gmailError = document.querySelector(".gmailError")
-    let addError = document.querySelector(".addError")
-    let numberError= document.querySelector(".numberError")
-
-    buttun.addEventListener("click",()=>{
-        function check(){
-             let pattern = /^[a-zA-Z0-9.+_-]+@gmail\.com$/;
-        let x = pattern.test(gmail.value)
+    function check(){
+        let nameError = document.querySelector(".nameError")
+        let gmailError = document.querySelector(".gmailError")
+        let addError = document.querySelector(".addError")
+        let numberError= document.querySelector(".numberError")
+        let textArea = document.getElementById("textArea") 
+// access regex
+        let pattern = /^[a-zA-Z0-9.+_-]+@gmail\.com$/;
+        let x = pattern.test(forms.email)
 
         let patternA = /^[A-Za-z .-]{2,40}$/
-        let y = patternA.test(name.value)
+        let y = patternA.test(forms.name)
 
-        let patternB = /^\d{10}$/;
-        let z = patternB.test(number.value)
+        let patternB = /^[A-Za-z0-9 .,_@!?#$%&()-]{3,100}$/;
+        let z = patternB.test(forms.title)
 
         let patternC = /^[A-Za-z0-9\s,.-]{5,150}$/;
-        let j = patternC.test(address.value)
+        let j = patternC.test(forms.address)
 
-        // console.log(gmail.value)
+// CHECK CONDITIONS
         if(x == true){
             console.log("gmail true")
             gmailError.textContent = ""
@@ -146,10 +187,10 @@ function inputForm(){
         }
 
          if(z === true){
-            console.log("number true")
+            console.log("subject true")
             numberError.textContent = ""
         } else{
-            numberError.textContent = "invalid 0 to 9"
+            numberError.textContent = "invalid"
         }
         if(j === true){
             console.log("address true")
@@ -158,19 +199,16 @@ function inputForm(){
         else{
             addError.textContent = "invalid"
         }
-
-        if(name.value===""||gmail.value==""||address.value==""||textArea.value==""||number.value===""){
+// check input is empety or not 
+        if(forms.name===""||forms.email==""||forms.title===""||forms.address==""||textArea.value==""){
                     alert("fill full details")
                     
                 }
+// check input ofter fillup is true or not (match from regex)
                 else{
-                    if(x === true && y==true&&z===true&&j===true){
+                    if(x === true && z === true && y === true && j === true){
                      alert("message sent")   
-                    name.value = "";
-                    gmail.value = "";
-                    address.value = "";
-                    textArea.value = "";
-                    number.value = "";   
+                      emailjs.send(srvID,tempID,forms)                 
                     }
                     else{
                         alert("something wrong")
@@ -178,10 +216,9 @@ function inputForm(){
                 }    
 
         }check()
-       
-        // function verify(){
-        
-        // }verify();
-        
+    }  
+
+    let button = document.querySelector(".cButton")
+    button.addEventListener("click",()=>{
+        sendMail();
     })
-}inputForm()

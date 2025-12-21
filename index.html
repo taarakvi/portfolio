@@ -6,6 +6,12 @@
         <title>portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        
+        
     </head>
     <body>
         <div class="nabvar">
@@ -17,7 +23,7 @@
                 <span class="projects opts">projects</span>
                 <span class="H-contact opts">contact</span>
                 <!-- <span class="resume opts">resume</span> -->
-                <span class="work opts">about me</span>
+                <span class="H-about opts">about me</span>
                 <span class="hire opts">hire me</span> 
                 <span class="barIcon"><i class="fa-solid fa-bars"></i></span>
             </div>
@@ -113,40 +119,67 @@
     </section4>
 
 <!-- section5 CONTACT-->
+<!-- action="https://formspree.io/f/mpqarrvk" method="post" -->
+
     <section5>
         <div class="coContainerMain">
             <div class="coContainer">
                 <h3>contact</h3>
                 <div class="box">
-                <input class="inptBox" id="inptName" type="text" placeholder="name">
+                <input class="inptBox" id="inptName" type="text" placeholder="name" required>
                 <label class="nameError"></label>
                 </div>
 
                 <div class="box">
-                <input class="inptBox" id="inptGmail" type="email" placeholder="@gmail.com">
+                <input class="inptBox" id="inptGmail" type="email" placeholder="@gmail.com" required>
                 <label class="gmailError"></label>
                 </div>
 
                 <div class="box">
-                <input class="inptBox" id="number" type="number" placeholder="number">
+                <input class="inptBox" id="inptSubject" type="text" placeholder="title" required>
                 <label class="numberError"></label>
                 </div>
 
                 <div class="box">
-                <input class="inptBox" id="inptAdd" type="text" placeholder="address">
+                <input class="inptBox" id="inptAdd" type="text" placeholder="address" required>
                 <label class="addError"></label>
                 </div>
 
                 <div class="box">
-                 <textarea class="inptBox" id="textArea" placeholder="message"></textarea>
+                 <textarea class="inptBox" id="textArea" placeholder="message" required></textarea>
                  </div>
-                 <button class="cButton">send message</button>
+                 <button class="cButton" type="submit">send message</button>
             </div>
         </div>
     </section5>
-<!-- section6 resume -->
+
+<!-- section6 about -->
     <section6>
-        
+        <div class="aboutMain">
+            <div class="aboutSect1">
+                <div class="aboutBox1 aboutUs"><span><span style="color: red;">ab</span>out us</span></div>
+                <div class="aboutBox1 paraBox">
+                    <p>i am tarakeshwar and i am a fresher web developer passionate about building simple and resoponsive
+                       website. i have experience with HTML, CSS, JavaScript and basic API integration. currently 
+                       improving my frontend skills and looking for internship or junior developer roles
+                    </p>
+                </div>
+            </div>
+
+            <div class="aboutSect1">
+                    <div class="aboutBox1">
+                        <img style="width: 300px; height: 400px;" src="img-source/3d edu img.webp">
+                    </div>
+                    <div class="aboutBox1 eduBox">
+                        <h3 style="padding-bottom: 1rem;">my qulifications</h3>
+                        <ul>
+                            <li>10th passed from up-board in 2020 uttar pradesh</li>
+                            <li>12th passed from up-board in 2022 uttar pradesh</li>
+                            <li>BCA (bechelore of computer aplication) currently pursuing</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
     </section6>
 
 <!-- footer -->
