@@ -360,7 +360,6 @@ section6{
     flex-direction: column;
     gap:1rem;
     /* border:1px solid blue; */
-    /* background: linear-gradient(black, red); */
     padding-top:2rem;
     /* background: linear-gradient(black,rgb(112, 43, 240),red); */
 }
@@ -402,9 +401,12 @@ section6{
     text-decoration: underline ;
     font-size:20px;
     font-weight:bold;
+    padding-bottom:0.5rem;
+    text-transform: capitalize;
 }
 .aboutSect1 .eduBox ul li{
-    padding: 1rem 5px 5px 5px;
+    padding:5px;
+    list-style: linear-gradient(red);
 }
 
 /* sectNext1 */
@@ -422,6 +424,8 @@ section6{
 }
 .skillSect1 ul li{
     padding: 5px;
+    list-style:linear-gradient(red);
+    list-style-type: style circle;;
 }
 .skillGraph{
     display:flex;
@@ -443,6 +447,22 @@ section6{
     width:8rem;
     height:6px;
     background-color: red;
+}
+/* sectNext2 */
+.career-obj{
+    display:flex;
+    justify-content:space-around;
+    padding:1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.c-o-box{
+    width:500px;
+    /* border: 1px solid red; */
+}
+.career-obj img{
+    width:100%;
 }
 
 /* mediaQuery */
