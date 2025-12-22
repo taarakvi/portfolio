@@ -358,10 +358,10 @@ section6{
     /* margin:2rem 1rem 1rem 1rem; */
     display:flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap:1rem;
     /* border:1px solid blue; */
     /* background: linear-gradient(black, red); */
-    padding-top:3rem;
+    padding-top:2rem;
     /* background: linear-gradient(black,rgb(112, 43, 240),red); */
 }
 .aboutSect1{
@@ -386,6 +386,7 @@ section6{
     font-weight: 600;
     font-size:50px;
     text-align: center;
+    padding-bottom:3.5rem;
 }
 .aboutSect1 .paraBox{
     /* border: 1px solid green; */
