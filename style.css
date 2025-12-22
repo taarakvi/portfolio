@@ -360,7 +360,7 @@ section6{
     /* border:1px solid blue; */
     /* background: linear-gradient(black, red); */
     padding-top:3rem;
-    background: linear-gradient(black,rgb(112, 43, 240),red);
+    /* background: linear-gradient(black,rgb(112, 43, 240),red); */
 }
 .aboutSect1{
     display:flex;
@@ -369,6 +369,7 @@ section6{
     flex-wrap: wrap;
     /* border: 1px solid blue; */
     padding: 1rem;
+    /* background: linear-gradient(red,rgb(112, 43, 240),black); */
 }
 .aboutSect1 .aboutBox1{
     width:45%;
@@ -408,7 +409,7 @@ section6{
     text-transform: capitalize;
     padding: 1rem;
     /* border: 1px solid green; */
-    background: linear-gradient(rgb(255, 0, 212),rgb(112, 43, 240),black);
+    /* background: linear-gradient(rgb(255, 0, 212),rgb(112, 43, 240),black); */
 }
 .skillSect1{
     padding: 1rem;
