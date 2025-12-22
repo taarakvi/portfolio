@@ -16,7 +16,7 @@ body{
     text-transform: capitalize;
     align-items: center;
     font-weight: bold;    
-    
+    font-size:19px;
 }
 .header .hsect1{
     display: flex;
@@ -28,11 +28,11 @@ body{
     font-size:20px;
 }
 .header .hire{
-    background-color: rgb(241, 2, 14);
+    background-color:red;
     padding:5px;
     border-radius:50px;
     border: none;
-    width: 4rem;
+    width: 4.5rem;
     text-align: center;
 }
 .barIcon{
@@ -45,7 +45,7 @@ body{
 }
 .header .opts:hover{
     border-bottom: 1px solid rgb(241, 2, 14);
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 /* .barIcon */
@@ -65,7 +65,7 @@ body{
     text-align:center;
     border-radius: 5px;
     border:1px solid rgba(255, 255, 255, 0.103);
-    font-size: 15px;
+    font-size:18px;
 }
 .barOption .h-hover:hover{
     transform: scale(1.1);
@@ -163,6 +163,7 @@ footer{
     text-transform: capitalize;
     color: aliceblue;
     padding: 10px;
+    background:linear-gradient(rgba(31, 30, 30, 0.288),rgba(0, 0, 0, 0.712));
 }
 .footerSect1{
     display: flex;
@@ -281,7 +282,7 @@ section4{
     background-repeat: no-repeat;
     background-position: center;
 }
-/* section5 */
+/* section5 contact*/
 section5{
     display: none;
 }
@@ -291,18 +292,19 @@ section5{
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
+    /* border: 1px solid red; */
+    background:linear-gradient(rgba(0, 0, 0, 0.966),rgba(140, 0, 255, 0.123),rgba(0, 0, 0, 0.226));
 }
 .coContainer h3{
-    font-size:30px;
+    font-size:35px;
     margin: 1rem;
-    color: red;
+    color: white;
     text-transform: capitalize;
 }
 .coContainer .box{
     width:50%;
     display:flex;
     flex-direction:column;
-    /* align-items: center; */
     /* border: 1px solid green; */
     border-radius:10px;
 }
@@ -314,7 +316,7 @@ section5{
 }
 .coContainer .inptBox{
     /* width:100%; */
-    padding: 1rem;
+    padding: 1.3rem 1rem 1.3rem 1rem;
     outline: none;
     font-size: large;
     font-weight: bold;
@@ -334,7 +336,7 @@ section5{
     font-size: small;
 }
 .coContainer .cButton{
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -409,7 +411,6 @@ section6{
     text-transform: capitalize;
     padding: 1rem;
     /* border: 1px solid green; */
-    /* background: linear-gradient(rgb(255, 0, 212),rgb(112, 43, 240),black); */
 }
 .skillSect1{
     padding: 1rem;
@@ -429,17 +430,17 @@ section6{
 }
 .skillGraph .htmlGraph{
     width:10rem;
-    height:8px;
+    height:6px;
     background-color: red;
 }
 .skillGraph .cssGraph{
     width:9rem;
-    height:8px;
+    height:6px;
     background-color: red;
 }
 .skillGraph .jsGraph{
     width:8rem;
-    height:8px;
+    height:6px;
     background-color: red;
 }
 
