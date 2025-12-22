@@ -163,7 +163,7 @@ footer{
     text-transform: capitalize;
     color: aliceblue;
     padding: 10px;
-    background:linear-gradient(rgba(31, 30, 30, 0.288),rgba(0, 0, 0, 0.712));
+    background:linear-gradient(rgba(31, 30, 30, 0.288),rgb(0, 0, 0));
 }
 .footerSect1{
     display: flex;
@@ -459,9 +459,13 @@ section6{
     display:none;
   }
 }
+
 /* contact */
 @media(max-width:600px){
-    .coContainer  .box{
+.cont1{
+    margin-top:10px;
+}
+.coContainer  .box{
     width:100%;
 }
 .coContainer .inptBox{
