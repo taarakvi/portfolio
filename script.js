@@ -201,17 +201,17 @@ function aboutMeB(){
         }
 // check input is empety or not 
         if(forms.name===""||forms.email==""||forms.title===""||forms.address==""||textArea.value==""){
-                    alert("fill full details")
+                    alert("Fill Full Details")
                     
                 }
 // check input ofter fillup is true or not (match from regex)
                 else{
                     if(x === true && z === true && y === true && j === true){
-                     alert("message sent")   
+                     alert("Message Sent")   
                       emailjs.send(srvID,tempID,forms)                 
                     }
                     else{
-                        alert("something wrong")
+                        alert("Something Went Wrong")
                     }
                 }    
 
