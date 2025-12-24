@@ -209,6 +209,11 @@ function aboutMeB(){
                     if(x === true && z === true && y === true && j === true){
                      alert("Message Sent")   
                       emailjs.send(srvID,tempID,forms)                 
+                        document.getElementById("inptName").value = "";
+                        document.getElementById("inptGmail").value = "";
+                        document.getElementById("inptSubject").value = "";
+                        document.getElementById("inptAdd").value = "";
+                        document.getElementById("textArea").value = "";
                     }
                     else{
                         alert("Something Went Wrong")

@@ -254,11 +254,29 @@ section4{
     border-radius:10px;
     background-color:rgba(31, 30, 30, 0.288);
     /* padding:5px; */
+    position: relative;
+}
+.proContainer .overlay{
+    width: 100%;
+    position: absolute;
+    inset:0;
+    color: white;
+    text-align: center;
+    align-content: center;
+    opacity:0;
+    backdrop-filter:blur(0px);
+     background:rgba(0,0,0,0.3);
+     transition:0.4s ease;
+     border-radius: 10px;
+     text-shadow:5px 10px 10px black;
+}
+.proContainer:hover .overlay:hover{
+    opacity:1;
+    backdrop-filter:blur(3px);
 }
 .proBox:hover{
     transform: scale(1.08);
-    transition:0.4s;
-   
+    transition:0.4s ease;  
 }
 .calcuBox{
     background-image:url("img-source/calculators.jpg");
@@ -460,7 +478,7 @@ section6{
     background-color: red;
 }
 .skillGraph .cssGraph{
-    width:9rem;
+    width:6rem;
     height:6px;
     background-color: red;
 }
@@ -485,6 +503,8 @@ section6{
 .career-obj img{
     width:100%;
 }
+
+/* sect 7 hire me */
 
 /* mediaQuery */
 @media(min-width:950px){
