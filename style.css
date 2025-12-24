@@ -55,6 +55,7 @@ body{
 }
 .barOption{
     position: absolute;
+    z-index:1;
     color: white;
     right:1rem;
     display:flex;
