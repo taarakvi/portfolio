@@ -14,6 +14,7 @@ bar.addEventListener("click",()=>{
     let sect4 = document.querySelector("section4")
     let sect5 = document.querySelector("section5")
     let sect6 = document.querySelector("section6")
+    let sect7 = document.querySelector("section7")
 // homeButton
     let homeB = document.querySelector(".home")
     let BarHomeB = document.querySelector(".H-home")
@@ -29,10 +30,14 @@ bar.addEventListener("click",()=>{
 // about
     let aboutMe = document.querySelector(".H-about")
     let BarAboutMe = document.querySelector(".H-about-me")
+// hire me
+    let hireMe = document.querySelector(".hire")
+    let BarHireMe = document.querySelector(".H-hire")
 
 // homeButtun
 function homeF(){
     homeB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -41,6 +46,7 @@ function homeF(){
         sect2.style.display="block"
     })
     BarHomeB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -54,6 +60,7 @@ function homeF(){
 // educationsButtun
 function eduF(){
     eduB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -62,6 +69,7 @@ function eduF(){
         sect2.style.display="none"
     })
     BarEduB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -75,6 +83,7 @@ function eduF(){
 // projectsButton
 function projectB(){
     proB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="block"
@@ -83,6 +92,7 @@ function projectB(){
         sect2.style.display="none"
     })
     BarProB.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="none"
         sect4.style.display="block"
@@ -96,6 +106,7 @@ function projectB(){
 // contact
 function contactB(){
     contact.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="block"
         sect4.style.display="none"
@@ -104,6 +115,7 @@ function contactB(){
         sect2.style.display="none"
     })
     BarContact.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="none"
         sect5.style.display="block"
         sect4.style.display="none"
@@ -113,8 +125,10 @@ function contactB(){
         barOpt.classList.toggle("barOption")
     })   
 }contactB();
+// about
 function aboutMeB(){
     aboutMe.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="block"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -123,6 +137,7 @@ function aboutMeB(){
         sect2.style.display="none"
     })
     BarAboutMe.addEventListener("click",()=>{
+        sect7.style.display="none"
         sect6.style.display="block"
         sect5.style.display="none"
         sect4.style.display="none"
@@ -132,6 +147,28 @@ function aboutMeB(){
         barOpt.classList.toggle("barOption")
     })   
 }aboutMeB();
+// hire me
+    function hireMeB(){
+    hireMe.addEventListener("click",()=>{
+        sect7.style.display="block"
+        sect6.style.display="none"
+        sect5.style.display="none"
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+    })
+    BarHireMe.addEventListener("click",()=>{
+        sect7.style.display="block"
+        sect6.style.display="none"
+        sect5.style.display="none"
+        sect4.style.display="none"
+        sect3.style.display="none"
+        sect1.style.display="none"
+        sect2.style.display="none"
+        barOpt.classList.toggle("barOption")
+    })   
+}hireMeB();
 
 // CONTACT FORM
 // browser script from gmailjs

@@ -13,7 +13,6 @@ body{
     display: flex;
     justify-content:space-between;
     padding:1rem;
-    text-transform: capitalize;
     align-items: center;
     font-weight: bold;    
     font-size:19px;
@@ -22,10 +21,13 @@ body{
     display: flex;
     gap:4rem;
     align-items: center;
-    /* position: fixed; */
+    text-transform: capitalize;
 }
 .header .name{
     font-size:20px;
+}
+.redColor{
+    color:red;
 }
 .header .hire{
     background-color:red;
@@ -99,6 +101,10 @@ body{
 }
 .meAbout{
     text-transform: capitalize;
+    
+}
+.meAbout h3 {
+    font-size:25px;
 }
 
 .bio{
@@ -111,16 +117,18 @@ body{
     align-items: center;
 }
 .cv{
-    /* background-color:red; */
+    background-color:red;
     color:white;
     padding:1px;
     border-radius: 5px;
     font-weight: bold;
-    width:2.5rem;
+    /* width:2.5rem; */
     font-size: small;
+    padding:3px;
+    cursor: pointer;
 }
 .contact div:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* section2 */
@@ -504,8 +512,106 @@ section6{
 .career-obj img{
     width:100%;
 }
+/* ANIMATIONS OF EVERYWERE */
+.name span{
+    animation: wave 2s ease-in-out infinite;
+    display:inline-block;
+}
+.name span:nth-child(1) {
+    animation-delay: 0s;
+}
+.name span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.name span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.name span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.name span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.name span:nth-child(6) {
+    animation-delay:1s;
+}
+.name span:nth-child(7) {
+    animation-delay: 3s;
+}
+.name span:nth-child(8) {
+    animation-delay:5s;
+}
 
-/* sect 7 hire me */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+/* section7 */
+section7{
+    display:none;
+}
+.hireMain{
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+    padding:1rem;
+    text-transform:capitalize;
+}
+.hireBox{
+    width: 500px;
+    border: 1px solid red;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    border-radius:10px;
+}
+.hireMeName{
+    padding: 1rem;
+    font-size:50px;
+}
+.hireBox ul{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+.hireBox ul li{
+    display: flex;
+    gap:1.5rem;
+    justify-content:end;
+    font-size: large;
+    align-items: center;
+}
+.hireBox ul li i{
+    font-size:25px;
+    color: red;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.hireBox button{
+    padding:5px 5px;
+    cursor:pointer;
+    background-color:red;
+    border:none;
+    color: white;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+
+
+
+
+
 
 /* mediaQuery */
 @media(min-width:950px){
@@ -537,11 +643,19 @@ section6{
 .coContainer .box label{
     font-size: 13px;
 }
-}
 
 /* section6 */
-@media(max-width:600px){
 .aboutSect1 .aboutBox1{
     width:300px; 
 }
+
+/* section7 */
+.hireMain{
+    flex-wrap:wrap;
 }
+}
+
+@media(max-width:600px){
+
+}
+
