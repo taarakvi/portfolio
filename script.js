@@ -169,6 +169,16 @@ function aboutMeB(){
         barOpt.classList.toggle("barOption")
     })   
 }hireMeB();
+// hireCbutton
+let hireCbutton = document.querySelector(".hireCbutton")
+hireCbutton.addEventListener("click",()=>{
+    sect7.style.display="none"
+    sect5.style.display="block"
+    console.log("hello")
+    // sect5.style.transition="0.5"
+})
+
+
 
 // CONTACT FORM
 // browser script from gmailjs
@@ -264,3 +274,4 @@ function aboutMeB(){
     button.addEventListener("click",()=>{
         sendMail();
     })
+

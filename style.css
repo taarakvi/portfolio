@@ -6,25 +6,38 @@ body{
     background-color:black;
     color: white;
 }
-
+.navbar{
+    position:relative;
+}
 .header{
     height:30px;
     /* border: 1px solid red; */
     display: flex;
-    justify-content:space-between;
+    width: 100%;
+    /* justify-content:space-between; */
     padding:1rem;
     align-items: center;
     font-weight: bold;    
     font-size:19px;
+    position:fixed;
+    z-index:1;
+    background-color:black;
+    top:0px;
+
 }
 .header .hsect1{
     display: flex;
     gap:4rem;
     align-items: center;
     text-transform: capitalize;
+    position:fixed;
+    z-index:1;
+    right:1rem;
 }
 .header .name{
     font-size:20px;
+    z-index:1;
+    position:fixed;
 }
 .redColor{
     color:red;
@@ -59,7 +72,7 @@ body{
     position: absolute;
     z-index:1;
     color: white;
-    right:1rem;
+    right:3rem;
     display:flex;
     flex-direction: column;
     top: 4rem;
@@ -70,6 +83,8 @@ body{
     border-radius: 5px;
     border:1px solid rgba(255, 255, 255, 0.103);
     font-size:18px;
+    text-transform: capitalize;
+    /* transition:10s; */
 }
 .barOption .h-hover:hover{
     transform: scale(1.1);
@@ -79,6 +94,7 @@ body{
 
 /* section1 */
 .container{
+    margin-top:30px;
     padding: 1rem;
 }
 .cont1{
@@ -118,11 +134,11 @@ body{
 }
 .cv{
     background-color:red;
+    box-shadow:0px 0px 10px 2px red;
     color:white;
     padding:1px;
     border-radius: 5px;
     font-weight: bold;
-    /* width:2.5rem; */
     font-size: small;
     padding:3px;
     cursor: pointer;
@@ -199,6 +215,7 @@ section3{
     display: none;
 }
 .edu-container{
+    margin-top:60px;
     /* margin:4rem 1rem 4rem 1rem; */
     display: flex;
     justify-content: center;
@@ -241,6 +258,7 @@ section3{
 
 /* section4 */
 section4{
+    margin-top:60px;
     display:none;
 }
 .proMainContainer{
@@ -337,6 +355,7 @@ section4{
 }
 /* section5 contact*/
 section5{
+    margin-top:60px;
     display: none;
 }
 .coContainer{
@@ -404,6 +423,7 @@ section5{
 
 /* about SECTION 6 */
 section6{
+    margin-top:60px;
     display: none;
 }
 .aboutMain{
@@ -437,9 +457,10 @@ section6{
 }
 .aboutSect1 .paraBox{
     /* border: 1px solid green; */
-    border: 1px solid rgba(73, 73, 75, 0.336);
+    /* border: 1px solid rgba(73, 73, 75, 0.336); */
     border-radius:10px;
     background-color:rgba(31, 30, 30, 0.288);
+    background: linear-gradient(to right, red , black);
 }
 /* sectionNext */
 .aboutSect1 .eduBox{
@@ -508,6 +529,9 @@ section6{
 .c-o-box{
     width:500px;
     /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 1rem;
+    background: linear-gradient(to right, red , black);
 }
 .career-obj img{
     width:100%;
@@ -553,6 +577,7 @@ section6{
 /* section7 */
 section7{
     display:none;
+    margin-top:60px;
 }
 .hireMain{
     display:flex;
@@ -563,7 +588,6 @@ section7{
 }
 .hireBox{
     width: 500px;
-    border: 1px solid red;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -571,6 +595,8 @@ section7{
     align-items: center;
     gap:1rem;
     border-radius:10px;
+    background: linear-gradient(to right, black,rgb(155, 240, 19));
+    text-shadow:5px 5px 5px black;
 }
 .hireMeName{
     padding: 1rem;
