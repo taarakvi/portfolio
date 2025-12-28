@@ -125,7 +125,7 @@ body{
 }
 .typing{
     display:flex;
-    gap: 5px;
+    gap:10px;
 }
 .typing p {
   font-size: 25px;
@@ -140,7 +140,7 @@ body{
   animation-fill-mode: forwards;
 }
 .typing p:nth-child(2) {
-  width:7.8em;
+  width:8em;
   animation: type 5s steps(30, end) infinite;
   /* animation-delay:5s; */
   animation-fill-mode: forwards;
