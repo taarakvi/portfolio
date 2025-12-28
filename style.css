@@ -58,9 +58,13 @@ body{
 .barIcon i{
     font-size:24px;
 }
+.opts{
+    padding:2px;
+    border: red;
+}
 .header .opts:hover{
-    border-bottom: 1px solid rgb(241, 2, 14);
-    transform: scale(1.1);
+    border-bottom: 1px solid red;
+    transform: scale(1.2);
     transition:0.4s;
     cursor: pointer;
 }
@@ -166,18 +170,18 @@ body{
     background-color:red;
     /* box-shadow:0px 0px 10px 2px red; */
     color:white;
-    padding:1px;
+    padding:3px;
     border-radius: 5px;
     font-weight: bold;
-    font-size: small;
-    padding:3px;
+    font-size:15px;
     cursor: pointer;
 }
 .contact div:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition:0.4s;
 }
 .c-icon{
-    border: 2px solid red;
+    border:2px solid red;
     padding:2px;
     border-radius: 50%;
 }
@@ -218,7 +222,8 @@ body{
 }
 
 .skillBox .box:hover{
-    transform: scale(1.05);
+    transform: scale(1.08);
+    transition: 0.5s;
 }
 
 /* footer */
