@@ -40,10 +40,10 @@ body{
     position:fixed;
 }
 .redColor{
-    color:red;
+    color:#00ffcc;
 }
 .header .hire{
-    background-color:red;
+    background-color:#00ffcc;
     padding:5px;
     border-radius:50px;
     border: none;
@@ -60,10 +60,10 @@ body{
 }
 .opts{
     padding:2px;
-    border: red;
+    border: #00ffcc;
 }
 .header .opts:hover{
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #00ffcc;
     transform: scale(1.2);
     transition:0.4s;
     cursor: pointer;
@@ -117,7 +117,7 @@ body{
     background-size: cover;
     /* border:1px solid blue; */
     border-radius:50%;
-    box-shadow:0px 20px 20px 10px rgb(241, 2, 14);
+    box-shadow:0px 20px 20px 10px #00ffcc;
 }
 .meAbout{
     text-transform: capitalize;
@@ -130,7 +130,7 @@ body{
 .typing p {
     display: inline-block;
   font-size: 25px;
-  border-right: 2px solid red;
+  border-right: 2px solid #00ffcc;
   white-space: nowrap;
   overflow: hidden;
   font-weight:600;
@@ -152,7 +152,7 @@ body{
     width: 0;
   }
   99.9% {
-    border-right: 2px solid red;
+    border-right: 2px solid #00ffcc;
   }
   100% {
     border: none;
@@ -169,7 +169,7 @@ body{
     align-items: center;
 }
 .cv{
-    background-color:red;
+    background-color:#00ffcc;
     /* box-shadow:0px 0px 10px 2px red; */
     color:white;
     padding:3px;
@@ -183,14 +183,14 @@ body{
     transition:0.4s;
 }
 .c-icon{
-    border:2px solid red;
+    border:2px solid #00ffcc;
     padding:2px;
     border-radius: 50%;
 }
 .c-icon i{
     padding:5px;
     border-radius:50px;
-    color: red;
+    color: #00ffcc;
 }
 /* section2 */
 .skillContainer{
@@ -218,7 +218,7 @@ body{
     margin-top: 5px;
 }
 .skillBox .skillIcon{
-    color:red;
+    color:#00ffcc;
     margin-bottom:10px;
     font-size:26px;
 }
@@ -280,9 +280,9 @@ section3{
 }
 .eduSect2{
     border-radius:50%;
-    background-color: rgba(241, 2, 14, 0.671);
+    background-color:#00ffcc;
     justify-content: center;
-    box-shadow:0px 10px 30px 10px rgba(241, 2, 14, 0.671);
+    box-shadow:0px 10px 30px 10px #00ffcc;
     font-size: large;
     display: flex;
     flex-direction: column;
@@ -321,7 +321,7 @@ section4{
 .proContainer .proBox{
     width:300px;
     height:200px;
-    border: 1px solid red;
+    border: 1px solid #00ffcc;
     border: 1px solid rgba(73, 73, 75, 0.336);
     border-radius:10px;
     background-color:rgba(31, 30, 30, 0.288);
@@ -429,7 +429,7 @@ section5{
     padding:3px 5px 0px 8px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: #00ffcc;
 }
 .coContainer .inptBox{
     padding: 1.3rem 1rem 1.3rem 1rem;
@@ -457,7 +457,7 @@ section5{
     border-radius: 5px;
     cursor: pointer;
     border:none;
-    background-color: rgb(255, 0, 0);
+    background-color: #00ffcc;
     color:white;
     font-size:15px;
     text-transform: capitalize;
@@ -505,7 +505,7 @@ section6{
     /* border: 1px solid rgba(73, 73, 75, 0.336); */
     border-radius:10px;
     background-color:rgba(31, 30, 30, 0.288);
-    background: linear-gradient(to right, red , black);
+    background: linear-gradient(to right, #00ffcc , black);
 }
 /* sectionNext */
 .aboutSect1 .eduBox{
@@ -520,7 +520,7 @@ section6{
 }
 .aboutSect1 .eduBox ul li{
     padding:5px;
-    list-style: linear-gradient(red);
+    list-style: linear-gradient(#00ffcc);
 }
 
 /* sectNext1 */
@@ -538,7 +538,7 @@ section6{
 }
 .skillSect1 ul li{
     padding: 5px;
-    list-style:linear-gradient(red);
+    list-style:linear-gradient(#00ffcc);
     list-style-type: style circle;;
 }
 .skillGraph{
@@ -550,17 +550,17 @@ section6{
 .skillGraph .htmlGraph{
     width:10rem;
     height:6px;
-    background-color: red;
+    background-color: #00ffcc;
 }
 .skillGraph .cssGraph{
     width:6rem;
     height:6px;
-    background-color: red;
+    background-color: #00ffcc;
 }
 .skillGraph .jsGraph{
     width:8rem;
     height:6px;
-    background-color: red;
+    background-color: #00ffcc;
 }
 /* sectNext2 */
 .career-obj{
@@ -576,7 +576,7 @@ section6{
     /* border: 1px solid red; */
     border-radius: 10px;
     padding: 1rem;
-    background: linear-gradient(to right, red , black);
+    background: linear-gradient(to right, #00ffcc , black);
 }
 .career-obj img{
     width:100%;
@@ -606,7 +606,7 @@ section7{
 .hireMain{
     display:flex;
     justify-content: center;
-    gap:2rem;
+    gap:3rem;
     padding:1rem;
     text-transform:capitalize;
 }
@@ -619,7 +619,7 @@ section7{
     align-items: center;
     gap:1rem;
     border-radius:10px;
-    background: linear-gradient(to right, black,rgb(155, 240, 19));
+    background: linear-gradient(to right, black,#00ffcc);
     text-shadow:5px 5px 5px black;
 }
 .hireMeName{
@@ -640,7 +640,7 @@ section7{
 }
 .hireBox ul li i{
     font-size:25px;
-    color: red;
+    color: #00ffcc;
 }
 a{
     color:white;
@@ -649,7 +649,7 @@ a{
 .hireBox button{
     padding:5px 5px;
     cursor:pointer;
-    background-color:red;
+    background-color:#00ffcc;
     border:none;
     color: white;
     font-size:15px;

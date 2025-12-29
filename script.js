@@ -169,14 +169,7 @@ function aboutMeB(){
         barOpt.classList.toggle("barOption")
     })   
 }hireMeB();
-// hireCbutton
-let hireCbutton = document.querySelector(".hireCbutton")
-hireCbutton.addEventListener("click",()=>{
-    sect7.style.display="none"
-    sect5.style.display="block"
-    console.log("hello")
-    // sect5.style.transition="0.5"
-})
+
 
 
 
@@ -270,8 +263,17 @@ hireCbutton.addEventListener("click",()=>{
         }check()
     }  
 
-    let button = document.querySelector(".cButton")
-    button.addEventListener("click",()=>{
+    let cbutton = document.querySelector(".cButton")
+    cbutton.addEventListener("click",()=>{
         sendMail();
     })
 
+// hireCbutton
+function hireSMSb(){
+    let hireCbutton = document.querySelector(".hireCbutton")
+    hireCbutton.addEventListener("click",()=>{
+    sect7.style.display="none"
+    sect5.style.display="block"
+    console.log("hello")
+})
+}hireSMSb()
